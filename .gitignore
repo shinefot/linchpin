@@ -1,0 +1,16 @@
+# Secrets — NEVER commit this
+.env
+
+# Python virtual environment (huge, and rebuildable)
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Generated reports
+reports/
+
+# Editor / OS junk
+.vscode/
+.DS_Store

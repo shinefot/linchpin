@@ -1,0 +1,36 @@
+nodes:
+  - id: euv_scanner
+    label: "EUV lithography scanner"
+    tier: equipment
+    single_source: true
+    geo_concentration: low
+    depends_on: [zeiss_optics, neon_gas, photoresist]
+
+  - id: zeiss_optics
+    label: "Precision EUV optics and mirrors"
+    tier: component
+    single_source: true
+    geo_concentration: medium
+    depends_on: [ultrapure_silica]
+
+  - id: neon_gas
+    label: "Semiconductor-grade neon"
+    tier: material
+    single_source: false
+    geo_concentration: high
+    depends_on: []
+
+  - id: photoresist
+    label: "EUV photoresist"
+    tier: material
+    single_source: false
+    geo_concentration: high
+    depends_on: []
+
+  - id: ultrapure_silica
+    label: "Ultra-pure silica"
+    tier: material
+    single_source: false
+    geo_concentration: medium
+    depends_on: []
+    
